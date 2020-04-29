@@ -1,0 +1,13 @@
+{
+    "window.zoomLevel": 1,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "C_Cpp.updateChannel": "Insiders",
+    "icie.dir.projectDirectory": "~/Development/Competitive",
+    "icie.template.solution": "~/Development/Competitive/templates/cc_template.cpp",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "phase",
+    "icie.paste.library.path": "/Users/rohitagarwal/Development/Competitive/codepieces",
+    "editor.smoothScrolling": true
+}
