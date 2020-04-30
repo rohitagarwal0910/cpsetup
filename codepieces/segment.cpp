@@ -1,6 +1,5 @@
 /// Name: Segment Tree
 /// Guarantee: const long long int N = 1e5;  // limit for array size
-
 const long long int N = 1e5;  // limit for array size
 long long int segsize;  // array size
 long long int t[2 * N];

@@ -2,6 +2,17 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Build .e",
+            "type": "shell",
+            "command": "clang++ -std=c++17 -Wall -Wextra -Wconversion -Wshadow -Wno-sign-conversion -g -D_GLIBCXX_DEBUG -fno-sanitize-recover=undefined -fsanitize=undefined main.cpp -o main.e",
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "panel": "shared",
+                "showReuseMessage": false,
+            },
+        },
+        {
             "label": "Run .e",
             "type": "shell",
             "command": "./main.e",
@@ -13,18 +24,19 @@
                 "$gcc"
             ],
             "presentation": {
-                "echo": true,
+                "echo": false,
                 "reveal": "always",
                 "focus": true,
                 "panel": "shared",
                 "showReuseMessage": true,
-                "clear": false
-            }
+                "clear": false,
+            },
+            "dependsOn": ["Build .e"]
         },
         {
             "label": "Clear main.cpp",
             "type": "shell",
-            "command": "rm -f main.cpp && rm -f main.e && rm -f main && rm -rf tests && cp templates/cc_template.cpp main.cpp",
+            "command": "rm -rf main* && rm -rf tests && cp templates/cc_template.cpp main.cpp",
             "group": {
                 "kind": "test",
                 "isDefault": true
