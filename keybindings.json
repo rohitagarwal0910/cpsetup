@@ -1,0 +1,52 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.reloadWindow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "workbench.action.tasks.test",
+    },
+    {
+        "key": "alt+s",
+        "command": "icie.submit.send"
+    },
+    {
+        "key": "alt+f12",
+        "command": "-icie.submit.send"
+    },
+    {
+        "key": "alt+\\",
+        "command": "icie.launch.nearby"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "-icie.launch.nearby"
+    },
+    {
+        "key": "alt+n",
+        "command": "icie.open.scan"
+    },
+    {
+        "key": "alt+f9",
+        "command": "-icie.open.scan"
+    },
+    {
+        "key": "alt+m",
+        "command": "icie.open.url"
+    },
+    {
+        "key": "alt+f11",
+        "command": "-icie.open.url"
+    },
+    {
+        "key": "alt+7",
+        "command": "icie.paste.qistruct"
+    },
+    {
+        "key": "alt+i",
+        "command": "-icie.paste.qistruct"
+    }
+]
