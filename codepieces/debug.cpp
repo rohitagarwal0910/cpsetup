@@ -1,20 +1,25 @@
-/// Name: Debug
+/// Name: A. Debug
 /// Description: TRACE
 /// Guarantee: #define TRACE
+template<class T> ostream& operator<<(ostream &os, vector<T> V);
+template<class T> ostream& operator<<(ostream &os, set<T> V);
+template<class T , class R > ostream& operator<<(ostream &os, map<T , R> V);
+template<class T , class R > ostream& operator<<(ostream &os, pair<T , R> V);
+
 template<class T> ostream& operator<<(ostream &os, vector<T> V){
 	os << "[ ";
 	for(auto v  : V) os << v << " ";
-	return os << " ]";
+	return os << "]";
 }
 template<class T> ostream& operator<<(ostream &os, set<T> V){
 	os << "[ ";
 	for(auto v  : V) os << v << " ";
-	return os << " ]";
+	return os << "]";
 }
 template<class T , class R > ostream& operator<<(ostream &os, map<T , R> V){
 	os << "[ ";
 	for(auto v  : V) os << "(" << v.first << ":" << v.second << ")";
-	return os << " ]";
+	return os << "]";
 }
 template<class T , class R > ostream& operator<<(ostream &os, pair<T , R> V){
 	return os << "(" << V.first << "," << V.second << ")";

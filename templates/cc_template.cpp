@@ -18,9 +18,11 @@ typedef map<lli, vll> mlv;
 #define fj(n) for (lli j = 0; j < n; j++)
 #define fiv for (lli i = 0; i < v.size(); i++)
 #define fis for (lli i = 0; i < s.size(); i++)
-#define rep(i,s,e) for (lli i = s; i != e; i += (e>s)?1:-1)
+#define rep(i,s,e) for (lli i = s; i < e; i++)
+#define repr(i,s,e) for (lli i = s; i >= e; i--)
 #define vs v.size()
 #define ss s.size()
+#define all(v) v.begin(), v.end()
 
 int main()
 {

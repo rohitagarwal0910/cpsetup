@@ -67,3 +67,14 @@ vlli getcoeff(vlli &v){ // get coefficents of x for polynomial with roots stored
     }
     return coef;
 }
+
+vll getPos(lli n){ //return indexes of 1s in binary representations of n in ascending order
+    lli bit=0;
+    vll tr;
+    while(n){
+        if(n&1) tr.pb(bit);
+        bit++;
+        n>>=1;
+    }
+    return tr;
+}

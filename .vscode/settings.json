@@ -41,6 +41,9 @@
         "ostream": "cpp",
         "scoped_allocator": "cpp",
         "streambuf": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "filesystem": "cpp",
+        "system_error": "cpp",
+        "iosfwd": "cpp"
     }
 }
