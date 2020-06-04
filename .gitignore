@@ -6,3 +6,4 @@
 !codepieces/*
 !templates
 !templates/*
+!/README.md
