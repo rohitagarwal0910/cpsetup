@@ -11,8 +11,9 @@ To import the above, copy .vscode folder into workspace.
 
 Custom keyboard shortcuts and settings for VSCode and ICIE (overriding the default ones) are defined below. To use - copy them in ```~/Library/Application Support/Code/User/{filename}``` or press ```cmd+shift+P``` in VSCode and choose ```Preferences: Open Keyboard Shortcuts (JSON)``` and ```Preferences: Open Settings (JSON)``` respectively to open these files.
 
-Settings:
-```{
+settings.json:
+```
+{
     "window.zoomLevel": 1,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -24,10 +25,12 @@ Settings:
     "editor.cursorBlinking": "phase",
     "icie.paste.library.path": "/Users/rohitagarwal/Development/Competitive/codepieces",
     "editor.smoothScrolling": true
-}```
+}
+```
 
-Keybindings:
-```// Place your key bindings in this file to override the defaultsauto[]
+keybindings.json:
+```
+// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "cmd+r",
@@ -78,7 +81,8 @@ Keybindings:
         "key": "alt+i",
         "command": "-icie.paste.qistruct"
     }
-]```
+]
+```
 
 Configured for
 * ICIE version: 0.7.23
